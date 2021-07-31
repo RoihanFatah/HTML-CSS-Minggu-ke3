@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kontak</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div>
+            <h1>Laman Kontak</h1>
+            <form action="Apel.html" method="GET">
+                <label for="username">Username : </label>
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required
+                />
+                <br /><br />
+                <label for="email">Email : </label>
+                <input type="email" name="email" placeholder="Email" required />
+                <br /><br />
+                <label for="gender">Kelamin :</label>
+                <input type="radio" name="gender1" value="laki" /> Laki-laki
+                <input type="radio" name="gender2" value="perempuan" />
+                Perempuan <br /><br />
+                <label for="buah">Buah Favorit : </label>
+                <select name="buah">
+                    <option value="apel">Apel</option>
+                    <option value="apel">Mangga</option>
+                    <option value="apel">Pisang</option>
+                    <option value="apel">Jeruk</option>
+                    <option value="apel">Anggur</option>
+                </select>
+            </form>
+            <br />
+            <button type="submit" value="submit">Kirim</button>
+        </div>
+    </body>
+</html>
