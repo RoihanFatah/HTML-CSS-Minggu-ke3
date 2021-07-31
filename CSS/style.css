@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+div {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+nav a {
+    color: white;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.header img {
+    float: left;
+    width: 70px;
+}
+
+.header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+p {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+ol {
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+    background: black;
+    margin: 0;
+    padding-left: 0;
+    text-align: right;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+li {
+    background: black;
+    padding: 1rem;
+    position: relative;
+    display: inline;
+    transition-duration: 0.5s;
+}
+
+li:hover {
+    background: grey;
+    cursor: pointer;
+}
+
+ul li ul {
+    background: lightgrey;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
